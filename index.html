@@ -1,0 +1,99 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>STATION 8 - 4 Pics 1 Word</title>
+        <link href="styles.css" rel="stylesheet">
+        <link rel="shortcut icon" type="image/png" href="favicon.png">
+        <script defer src="script.js"></script>
+    </head>
+
+    <body>
+        <div class="container" id="container">
+            <input type="image" src="ASSETS/start-msg.png" class="start-msg msg" id="start-msg">
+            <button class="start-btn btn" id="start-btn" onclick="startGame()">START</button>
+            <input type="image" src="ASSETS/pass-msg.png" class="pass-msg msg hide" id="pass-msg">
+            <button class="menu-btn btn hide" id="menu-btn">BACK TO MENU</button>
+
+            <img src="ASSETS/title-img.png" id="title-img" class="title-img hide">
+            <div id="level-text" class="level-text hide"> LEVEL 1 </div>
+
+            <div class="images-container">
+                <div class="level1-images image-grid hide" id="level1-images">
+                    <img src="IMAGES/img1-1.png" class="img level1-images">
+                    <img src="IMAGES/img1-2.png" class="img level1-images">
+                    <img src="IMAGES/img1-3.png" class="img level1-images">
+                    <img src="IMAGES/img1-4.png" class="img level1-images">
+                </div>
+                <div class="level2-images image-grid hide" id="level2-images">
+                    <img src="IMAGES/img2-1.png" class="img level2-images">
+                    <img src="IMAGES/img2-2.png" class="img level2-images">
+                    <img src="IMAGES/img2-3.png" class="img level2-images">
+                    <img src="IMAGES/img2-4.png" class="img level2-images">
+                </div>
+                <div class="level3-images image-grid hide" id="level3-images">
+                    <img src="IMAGES/img3-1.png" class="img level3-images">
+                    <img src="IMAGES/img3-2.png" class="img level3-images">
+                    <img src="IMAGES/img3-3.png" class="img level3-images">
+                    <img src="IMAGES/img3-4.png" class="img level3-images">
+                </div>
+                <div class="level4-images image-grid hide" id="level4-images">
+                    <img src="IMAGES/img4-1.png" class="img level4-images">
+                    <img src="IMAGES/img4-2.png" class="img level4-images">
+                    <img src="IMAGES/img4-3.png" class="img level4-images">
+                    <img src="IMAGES/img4-4.png" class="img level4-images">
+                </div>
+                <div class="level5-images image-grid hide" id="level5-images">
+                    <img src="IMAGES/img5-1.png" class="img level5-images">
+                    <img src="IMAGES/img5-2.png" class="img level5-images">
+                    <img src="IMAGES/img5-3.png" class="img level5-images">
+                    <img src="IMAGES/img5-4.png" class="img level5-images">
+                </div>
+                <div class="level6-images image-grid hide" id="level6-images">
+                    <img src="IMAGES/img6-1.png" class="img level6-images">
+                    <img src="IMAGES/img6-2.png" class="img level6-images">
+                    <img src="IMAGES/img6-3.png" class="img level6-images">
+                    <img src="IMAGES/img6-4.png" class="img level6-images">
+                </div>
+                <div class="level7-images image-grid hide" id="level7-images">
+                    <img src="IMAGES/img7-1.png" class="img level7-images">
+                    <img src="IMAGES/img7-2.png" class="img level7-images">
+                    <img src="IMAGES/img7-3.png" class="img level7-images">
+                    <img src="IMAGES/img7-4.png" class="img level7-images">
+                </div>
+                <div class="level8-images image-grid hide" id="level8-images">
+                    <img src="IMAGES/img8-1.png" class="img level8-images">
+                    <img src="IMAGES/img8-2.png" class="img level8-images">
+                    <img src="IMAGES/img8-3.png" class="img level8-images">
+                    <img src="IMAGES/img8-4.png" class="img level8-images">
+                </div>
+                <div class="level9-images image-grid hide" id="level9-images">
+                    <img src="IMAGES/img9-1.png" class="img level9-images">
+                    <img src="IMAGES/img9-2.png" class="img level9-images">
+                    <img src="IMAGES/img9-3.png" class="img level9-images">
+                    <img src="IMAGES/img9-4.png" class="img level9-images">
+                </div>
+                <div class="level10-images image-grid hide" id="level10-images">
+                    <img src="IMAGES/img10-1.png" class="img level10-images">
+                    <img src="IMAGES/img10-2.png" class="img level10-images">
+                    <img src="IMAGES/img10-3.png" class="img level10-images">
+                    <img src="IMAGES/img10-4.png" class="img level10-images">
+                </div>
+            </div>
+
+            <div class="content-container">
+                <div class="question-text hide" id="question-text">_ _ _ _ _ _ _</div>
+                <div class="hint-text hide" id="hint-text">HINT:  _ G _ T Q _ A</div>
+            </div>
+
+            <div class="actions-container">
+                <input type="text" class="answer-box hide" id="answer-box" placeholder="ENTER YOUR ANSWER HERE" onkeyup="this.value = this.value.toUpperCase()">
+                <div class="buttons-container">
+                    <button class="submit-btn btn hide" id="submit-btn" onclick="submitAnswer()">SUBMIT</button>
+                    <button class="hint-btn btn hide" id="hint-btn" onclick="showHint()">HINT</button>
+                </div>
+            </div>
+
+        </div>
+    </body>
+</html>
