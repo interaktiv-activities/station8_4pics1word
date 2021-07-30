@@ -43,6 +43,8 @@ function startGame(){
     level1Images.classList.remove('hide')
 }
 
+
+
 function submitAnswer(){
     var answerValue =  answerBox.value
     switch (questionIndex){
@@ -106,7 +108,7 @@ function submitAnswer(){
                 level6Images.classList.remove('hide')
                 levelText.innerHTML = "LEVEL " + questionIndex
                 questionText.innerHTML = "_ _ _ _ _ _ _ _"
-                hintText.innerHTML = "HINT: _ R _ A _ _ N G"
+                hintText.innerHTML = "HINT: _ R A _ _ _ N G"
             } else {
                 alert("INCORRECT! Please Try Again!")
             }

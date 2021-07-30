@@ -34,10 +34,9 @@ body{
 }
 
 .level-text{
-    font-family: Sofia;
+    font-family: Eathoma;
     margin-bottom: 30px;
-    font-weight: 900;
-    font-size: 40px;
+    font-size: 20px;
 }
 
 .image-grid{
@@ -62,14 +61,15 @@ body{
     border-color: transparent;
     background-size: 500px;
     background-repeat: no-repeat;
-    font-family: Eathoma;
-    font-size: 20px;
-    padding-left: 18px;
+    font-family: Sofia;
+    font-weight: 900;
+    font-size: 25px;
     padding-bottom: 10px;
     color: #FFFFFF;
     width: 501px;
     height: 80px;
     margin-top: 15px;
+    text-align: center;
 }
 
 .container{
@@ -88,7 +88,7 @@ body{
 }
 
 .msg{
-    width: 80%;
+    width: 700px;
     position: relative;
     display: block;
     margin: auto;
