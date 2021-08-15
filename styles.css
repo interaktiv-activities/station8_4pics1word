@@ -207,7 +207,7 @@ section img{
 /*Alert Box*/
 .alert {
     background-color: #fe0000;
-    color: white;
+    color: #FFFFFF;
     width: 480px;
     height: 50px;
     padding-top: 20px;
@@ -235,17 +235,17 @@ section img{
 }
 
 .closebtn {
-    margin-right: 45px;
-    color: white;
+    margin-right: 35px;
+    color: #FFFFFF;
     font-weight: bold;
     float: right;
     font-size: 60px;
-    line-height: 40px;
+    line-height: 35px;
     cursor: pointer;
     transition: 0.3s;
 }
   
   /* When moving the mouse over the close button */
   .closebtn:hover {
-    color: black;
+    color: #000000;
   }
