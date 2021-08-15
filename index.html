@@ -6,16 +6,32 @@
         <link href="styles.css" rel="stylesheet">
         <link rel="shortcut icon" type="image/png" href="favicon.png">
         <script defer src="script.js"></script>
+        <script defer src="animation.js"></script>
     </head>
 
     <body>
+        <section class="parallax" id="parallax">
+            <image src="ANIMATION-ELEMENTS/title-img.png" class="title-img-start layer"></image><br>
+            <button class="start-btn layer" onclick="startGame()"> START! </button>
+            <img src="ANIMATION-ELEMENTS/asset1.png" data-speed="7" class="layer card" id="card">
+            <img src="ANIMATION-ELEMENTS/asset2.png" data-speed="12" class="layer card" id="card">
+            <img src="ANIMATION-ELEMENTS/asset3.png" data-speed="-2" class="layer card" id="card">
+            <img src="ANIMATION-ELEMENTS/asset4.png" data-speed="-7" class="layer card" id="card">
+            <img src="ANIMATION-ELEMENTS/asset5.png" data-speed="8" class="layer card" id="card">
+            <img src="ANIMATION-ELEMENTS/asset6.png" data-speed="5" class="layer card" id="card">
+            <img src="ANIMATION-ELEMENTS/asset7.png" data-speed="-4" class="layer card" id="card">
+            <img src="ANIMATION-ELEMENTS/asset8.png" data-speed="-6" class="layer card" id="card">
+            <img src="ANIMATION-ELEMENTS/asset9.png" data-speed="7" class="layer card" id="card">
+            <img src="ANIMATION-ELEMENTS/asset10.png" data-speed="-5" class="layer card" id="card">
+            <img src="ANIMATION-ELEMENTS/asset11.png" data-speed="1" class="layer card" id="card">
+            <img src="ANIMATION-ELEMENTS/asset12.png" data-speed="-5" class="layer card" id="card">
+        </section>
+
         <div class="container" id="container">
-            <input type="image" src="ASSETS/start-msg.png" class="start-msg msg" id="start-msg">
-            <button class="start-btn btn" id="start-btn" onclick="startGame()">START</button>
             <input type="image" src="ASSETS/pass-msg.png" class="pass-msg msg hide" id="pass-msg">
             <button class="menu-btn btn hide" id="menu-btn">BACK TO MENU</button>
 
-            <img src="ASSETS/title-img.png" id="title-img" class="title-img hide">
+            <img src="ASSETS/title-img.png" id="title-img-game" class="title-img-game hide">
             <div id="level-text" class="level-text hide"> LEVEL 1 </div>
 
             <div class="images-container">
@@ -81,7 +97,7 @@
                 </div>
             </div>
 
-            <div class="content-container">
+            <div class="content-container">     
                 <div class="question-text hide" id="question-text">_ _ _ _ _ _ _</div>
                 <div class="hint-text hide" id="hint-text">HINT:  _ G _ T Q _ A</div>
             </div>
@@ -89,9 +105,14 @@
             <div class="actions-container">
                 <input type="text" class="answer-box hide" id="answer-box" placeholder="ENTER YOUR ANSWER HERE" onkeyup="this.value = this.value.toUpperCase()">
                 <div class="buttons-container">
-                    <button class="submit-btn btn hide" id="submit-btn" onclick="submitAnswer()">SUBMIT</button>
                     <button class="hint-btn btn hide" id="hint-btn" onclick="showHint()">HINT</button>
+                    <button class="submit-btn btn hide" id="submit-btn" onclick="submitAnswer()">SUBMIT</button>
                 </div>
+            </div>
+
+            <div class="alert" id="alert">
+                <span class="closebtn" onclick="this.parentElement.style.display='none'">&times;</span>
+                <div class="alert-text"> INCORRECT! Please Try Again!  </div>
             </div>
 
         </div>

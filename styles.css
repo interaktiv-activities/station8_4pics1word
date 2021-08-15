@@ -13,13 +13,12 @@
 }
 
 body{
-    background-image: url(ASSETS/background.png);
+    background-image: url(ANIMATION-ELEMENTS/background.png);
     background-size: 100vw;
     background-repeat: no-repeat;
     background-attachment: scroll;
     width: 100vw;
     height: auto;
-    display: flex;
     max-width: 100vw;
     justify-content: center;
     align-items: center;
@@ -27,7 +26,7 @@ body{
     color: #FFFFFF;
 }
 
-.title-img{
+.title-img-game{
     width: 400px;
     margin-bottom: 15px;
     margin-top: 40px;
@@ -89,10 +88,9 @@ body{
 
 .msg{
     width: 700px;
-    position: relative;
     display: block;
     margin: auto;
-    margin-top: 15px;
+    margin-top: 15vh;
     cursor: default;
 }
 
@@ -115,11 +113,11 @@ body{
 .hint-btn{
     padding-left: 75px ;
     padding-right: 75px ;
-    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .submit-btn{
-    margin-right: 10px;
+    margin-left: 10px;
 }
 
 .btn:hover{
@@ -152,3 +150,102 @@ body{
 .actions-container{
     margin-bottom: 40px;
 }
+
+/*START BUTTON*/
+.section{
+    position: relative;
+    width: 100%;
+    height: 50vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-img-start{
+    position: relative;
+    height: 67px;
+    width: 350px;
+    margin-bottom: 15px;
+    margin-top: 10vh;
+    z-index: 1;
+}
+
+.start-btn{
+    position: relative;
+    border-radius: 100%;
+    border: transparent;
+    background-color: #b2d233;
+    box-shadow: 0px 35px #9eb153;
+    font-family: Eathoma;
+    font-size: 60px;
+    color: #FFFFFF;
+    height: 350px;
+    width: 350px;
+    z-index: 1;
+}
+
+.start-btn:hover{
+    margin-top: 12px;
+    box-shadow: 0px 23px #9eb153;
+}
+
+.start-btn:active{
+    margin-top: 34px;
+    box-shadow: 0px 1px #9eb153;
+}
+
+section img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/*Alert Box*/
+.alert {
+    background-color: #fe0000;
+    color: white;
+    width: 480px;
+    height: 50px;
+    padding-top: 20px;
+    text-align: center;
+    justify-content: center;
+    z-index: 1;
+    position: fixed;
+    bottom: 0;
+    right:25%;
+    left:50%;
+    margin-left: -240px;
+    border-top-left-radius: 25px ;
+    border-top-right-radius: 25px ;
+    border-top-style: solid;
+    border-left-style: solid;
+    border-right-style: solid;
+    border-width: 15px;
+    display: none;
+    border-color: #be0000;
+  }
+
+.alert-text{
+    font-family: Sofia;
+    font-size: 25px;
+}
+
+.closebtn {
+    margin-right: 45px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 60px;
+    line-height: 40px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+  
+  /* When moving the mouse over the close button */
+  .closebtn:hover {
+    color: black;
+  }
